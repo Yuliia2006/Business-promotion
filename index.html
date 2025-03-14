@@ -10,14 +10,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <!-- region hero -->
+    <!-- #region header -->
+    <header class="page-header">
       <div class="container header-container">
         <nav class="navigation">
-          <a href="./index.html" class="header-logo"
+          <a href="./index.html" class="logo header-logo"
             ><img src="./images/pictures/logo.png" alt="logo" />Product</a
           >
           <ul class="nav-list">
@@ -35,7 +43,6 @@
             </li>
           </ul>
         </nav>
-
         <ul class="list-btn">
           <li><button type="button" class="list-btn-sign">Sign In</button></li>
           <li>
@@ -44,31 +51,40 @@
         </ul>
       </div>
     </header>
-    <main>
-      <!-- section hero-->
-      <section class="section-hero">
-        <h1 class="hero-title">Work at the speed of thought</h1>
-        <p class="hero-text">
-          Tools, tutorials, design and innovation experts, all in one place! The
-          most intuitive way to imagine your next user experience.
-        </p>
-        <ul class="hero-list">
-          <li class="hero-list-item">
-            <button type="button" class="hero-list-btn">Get started</button>
-          </li>
-          <li class="hero-list-item">
-            <button type="button" class="hero-list-btn">Watch the Video</button>
-          </li>
-        </ul>
-        <img
-          src="./images/pictures/hero-img.png"
-          alt="peoples"
-          width="610"
-          height="555"
-        />
-      </section>
+    <!-- #endregion header -->
 
-      <!-- section feature-->
+    <main>
+      <!-- #region section hero-->
+      <section class="section-hero">
+        <div class="container hero-container">
+          <div class="wrapper">
+            <h1 class="hero-title">Work at the speed of thought</h1>
+            <p class="hero-text">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <ul class="hero-list">
+              <li class="hero-list-item">
+                <button type="button" class="hero-list-btn">Get started</button>
+              </li>
+              <li class="hero-list-item">
+                <button type="button" class="hero-list-btn2">
+                  Watch the Video
+                </button>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="./images/pictures/hero-img.png"
+            alt="peoples"
+            width="610"
+            height="555"
+          />
+        </div>
+      </section>
+      <!-- #endregion hero -->
+
+      <!--  #region section feature-->
       <section class="section-feature">
         <h2 class="feature-title">Product was Built Specifically for You</h2>
         <ul class="feature-list">
@@ -99,8 +115,9 @@
         </ul>
         <button type="button" class="feature-btn">SIGN UP NOW</button>
       </section>
+      <!--  #endregion section feature-->
 
-      <!-- section Business management -->
+      <!-- #region section Business management -->
       <section class="section-business">
         <h2 class="section-business-title">
           Effortless Validation for Management
@@ -132,8 +149,9 @@
           height="500"
         />
       </section>
+      <!-- #endregion section Business management -->
 
-      <!-- section Support -->
+      <!-- #region section Support -->
       <section class="section-support">
         <img
           src="./images/pictures/support-img.png"
@@ -167,8 +185,9 @@
           </li>
         </ul>
       </section>
+      <!-- #endregion section Support -->
 
-      <!-- section Collaboration -->
+      <!-- #region section Collaboration -->
       <section class="section-collaboration">
         <h2 class="collaboration-title">Optimisation for Collaborative</h2>
         <p class="collaboration-text">
@@ -199,8 +218,9 @@
           height="500"
         />
       </section>
+      <!-- #endregion section Collaboration -->
 
-      <!-- section Quick & Easy -->
+      <!-- #region section Quick & Easy -->
       <section class="section-quickeasy">
         <h2 class="section-quickeasy-title">Quick & Easy Process</h2>
         <p class="section-quickeasy-text">
@@ -255,8 +275,9 @@
           </button>
         </ul>
       </section>
+      <!-- #endregion section Quick & Easy -->
 
-      <!-- section News feed -->
+      <!-- #region section News feed -->
       <section class="section-newsfeed">
         <h2 class="section-newsfeed">Contents Strategies</h2>
         <p class="section-newsfeed-text">
@@ -308,8 +329,9 @@
           </li>
         </ul>
       </section>
+      <!-- #endregion section News feed -->
 
-      <!-- section Pricing -->
+      <!-- #region section Pricing -->
       <section class="section-pricing">
         <h2 class="pricing-title">Price Table</h2>
         <p class="pricing-text">We offer competitive price</p>
@@ -327,109 +349,115 @@
             </ul>
             <button class="pricing-list-second-btm">Order Now</button>
           </li>
-          <li>
-            <h3>Standard</h3>
-            <p>Brief price description</p>
-            <h4>5</h4>
-            <p>$</p>
-            <p>Per / month</p>
-            <ul>
-              <li>5+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
+          <li class="pricing-list-item">
+            <h3 class="pricing-list-subtitle">Standard</h3>
+            <p class="pricing-list-text">Brief price description</p>
+            <h4 class="pricing-list-subsubtitle">5</h4>
+            <p class="pricing-list-text">$</p>
+            <p class="pricing-list-text">Per / month</p>
+            <ul class="pricing-list-second">
+              <li class="pricing-list-second-item">5+ Operators</li>
+              <li class="pricing-list-second-item">Notifications</li>
+              <li class="pricing-list-second-item">Landing Pages</li>
             </ul>
-            <button>Order Now</button>
+            <button class="pricing-list-second-btm">Order Now</button>
           </li>
-          <li>
-            <h3>Premium</h3>
-            <p>Brief price description</p>
-            <h4>10</h4>
-            <p>$</p>
-            <p>Per / month</p>
-            <ul>
-              <li>5+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
+          <li class="pricing-list-item">
+            <h3 class="pricing-list-subtitle">Premium</h3>
+            <p class="pricing-list-text">Brief price description</p>
+            <h4 class="pricing-list-subsubtitle">10</h4>
+            <p class="pricing-list-text">$</p>
+            <p class="pricing-list-text">Per / month</p>
+            <ul class="pricing-list-second">
+              <li class="pricing-list-second-item">5+ Operators</li>
+              <li class="pricing-list-second-item">Notifications</li>
+              <li class="pricing-list-second-item">Landing Pages</li>
             </ul>
-            <button>Order Now</button>
+            <button class="pricing-list-second-btm">Order Now</button>
           </li>
         </ul>
       </section>
+      <!-- #endregion section Pricing -->
 
-      <!-- section Clients Say -->
-      <section>
-        <h2>What Clients Say</h2>
-        <p>
+      <!-- #region section Clients Say -->
+      <section class="section-clients">
+        <h2 class="clients-title">What Clients Say</h2>
+        <p class="clients-text">
           Problems trying to resolve the conflict between the two major realms
           of Classical physics: Newtonian mechanics
         </p>
-        <ul>
-          <li>
+        <ul class="clients-list">
+          <li class="clients-list-item">
             <img src="./images/stars.png" alt="Stars" />
-            <p>
+            <p class="clients-list-text">
               Product helps you see how many more days you need to work to reach
               your financial goal. Product helps you see how many more days you
               need to work to reach your financial goal. Product helps you see
               how many more days you need to work to reach your financial goal.
             </p>
             <img src="./images/ellipse/Ellipse 2.png" alt="small-avatar" />
-            <h3>Wahid Ari</h3>
-            <p>Designer</p>
+            <h3 class="clients-list-subtitle">Wahid Ari</h3>
+            <p class="clients-list-text">Designer</p>
           </li>
-          <li>
+          <li class="clients-list-item">
             <img src="./images/stars.png" alt="Stars" />
-            <p>
+            <p class="clients-list-text">
               Product helps you see how many more days you need to work to reach
               your financial goal. Product helps you see how many more days you
               need to work to reach your financial goal. Product helps you see
               how many more days you need to work to reach your financial goal.
             </p>
             <img src="./images/ellipse/Ellipse 2-1.png" alt="small-avatar" />
-            <h3>Wahid Ari</h3>
-            <p>Designer</p>
+            <h3 class="clients-list-subtitle">Wahid Ari</h3>
+            <p class="clients-list-text">Designer</p>
           </li>
-          <li>
+          <li class="clients-list-item">
             <img src="./images/stars.png" alt="Stars" />
-            <p>
+            <p class="clients-list-text">
               Product helps you see how many more days you need to work to reach
               your financial goal. Product helps you see how many more days you
               need to work to reach your financial goal. Product helps you see
               how many more days you need to work to reach your financial goal.
             </p>
             <img src="./images/ellipse/Ellipse 2-2.png" alt="small-avatar" />
-            <h3>Wahid Ari</h3>
-            <p>Designer</p>
+            <h3 class="clients-list-subtitle">Wahid Ari</h3>
+            <p class="clients-list-text">Designer</p>
           </li>
         </ul>
       </section>
+      <!-- #endregion section Clients Say -->
 
-      <!-- section Join 100 -->
-      <section>
-        <h2>Join 100 Compannies who boost their business with Product</h2>
-        <button>Get This</button>
+      <!-- #region section Join 100 -->
+      <section class="section-join">
+        <h2 class="join-title">
+          Join 100 Compannies who boost their business with Product
+        </h2>
+        <button class="join-btn">Get This</button>
         <img src="./images/pictures/screen.png" alt="screen" />
       </section>
+      <!-- #endregion section Join 100 -->
     </main>
 
-    <!-- footer -->
-    <footer>
-      <a href="./index.html"
+    <!-- #region footer -->
+    <footer class="page-footer">
+      <a class="logo-link logo-footer" href="./index.html"
         ><img src="./images/pictures/logo.png" alt="logo" />Product</a
       >
 
-      <h3>Resource</h3>
-      <ul>
-        <li><p>About Us</p></li>
-        <li><p>Blog</p></li>
-        <li><p>Contact</p></li>
-        <li><p>FAQ</p></li>
+      <h3 class="footer-subtitle">Resource</h3>
+      <ul class="footer-list">
+        <li class="footer-list-item"><p>About Us</p></li>
+        <li class="footer-list-item"><p>Blog</p></li>
+        <li class="footer-list-item"><p>Contact</p></li>
+        <li class="footer-list-item"><p>FAQ</p></li>
       </ul>
-      <h3>Legal Stuff</h3>
-      <ul>
-        <li>Disclaimer</li>
-        <li>Financing</li>
-        <li>Privacy Policy</li>
+      <h3 class="footer-subtitle">Legal Stuff</h3>
+      <ul class="footer-list">
+        <li class="footer-list-item">Disclaimer</li>
+        <li class="footer-list-item">Financing</li>
+        <li class="footer-list-item">Privacy Policy</li>
       </ul>
     </footer>
+    <!-- #endregion footer -->
   </body>
 </html>
