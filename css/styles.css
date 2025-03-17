@@ -1,7 +1,10 @@
 body {
   font-family: "Poppins", sans-serif;
-  color: #22343d;
-  background-color: #fff;
+  font-size: 16px;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
 }
 
 /* #region  */
@@ -27,16 +30,10 @@ a {
   text-decoration: none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 button {
-  display: block;
   cursor: pointer;
   border: none;
+  font-family: inherit;
 }
 
 /* common */
@@ -54,25 +51,19 @@ button {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .navigation {
   display: flex;
-  align-items: center;
 }
-.logo {
-  display: flex;
-  align-items: center;
-}
+
 .header-logo {
-  display: flex;
+  display: block;
   font-weight: 700;
   font-size: 30px;
   line-height: 0.93;
   color: #173a56;
-  gap: 16px;
   margin-right: 237px;
-  align-items: center;
+  padding: 22px 0;
 }
 
 .nav-list {
@@ -98,7 +89,6 @@ button {
   display: flex;
   gap: 21px;
   margin-left: auto;
-  align-items: center;
 }
 .list-btn-sign {
   font-weight: 600;
@@ -112,6 +102,7 @@ button {
   background-color: #fff;
 }
 .second {
+  font-weight: 600;
   width: 113px;
   height: 42px;
   background-color: #02897a;
@@ -122,7 +113,7 @@ button {
 
 /* #region section hero */
 .section-hero {
-  margin: 25px 0 50px;
+  padding: 25px 0 50px;
 }
 .hero-container {
   display: flex;
@@ -138,21 +129,17 @@ button {
   font-size: 40px;
   line-height: 1.5;
   color: #22343d;
-  margin-bottom: 18px;
-  max-width: 390px;
 }
 .hero-text {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.55556;
+  line-height: 1.56;
   color: #22343d;
-  max-width: 465px;
   margin-bottom: 45px;
 }
 .hero-list {
   display: flex;
   gap: 30px;
-  align-items: center;
 }
 .hero-list-item {
 }
@@ -167,20 +154,18 @@ button {
 }
 .hero-list-btn2 {
   font-weight: 600;
-  font-size: 16px;
+  width: 178px;
+  height: 53px;
+  background: transparent;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #02897a;
-  width: 164px;
-  height: 23px;
-  background-color: #fff;
 }
 
 /* #endregion section hero */
 
 /* #region section feature */
 .section-feature {
-  background-color: #fff;
   padding: 50px 0;
 }
 .feature-title {
@@ -189,22 +174,51 @@ button {
   line-height: 48px;
   text-align: center;
   color: #22343d;
-  max-width: 500px;
+  max-width: 539px;
   margin: 0 auto 50px;
 }
 .feature-list {
   display: flex;
   gap: 30px;
-  margin-bottom: 50px;
+}
+.spes.feature-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .feature-list-item {
   width: calc((100% - 90px) / 4);
+}
+.feature-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 19px;
+  width: 54px;
+  height: 54px;
+}
+.first {
+  background-color: #02897a;
+}
+
+.second2 {
+  background: #4d8dff;
+}
+
+.third {
+  background: #740a76;
+}
+
+.four {
+  background: #f03e3d;
+}
+
+.icon-feature {
+  fill: #fff;
 }
 .feature-list-subtitle {
   font-weight: 600;
   font-size: 22px;
   color: #22343d;
-  padding-bottom: 13px;
+  margin-bottom: 13px;
 }
 .feature-list-text {
   font-weight: 400;
@@ -214,7 +228,7 @@ button {
 }
 .feature-btn {
   display: block;
-  margin: 0 auto;
+  margin: 50px auto 0;
   font-weight: 700;
   font-size: 16px;
   color: #fff;
@@ -222,13 +236,12 @@ button {
   border-radius: 4px;
   width: 175px;
   height: 53px;
-  margin-bottom: 50px;
 }
 /* #endregion section feature */
 
 /* #region section Business management */
 .section-business {
-  margin: 0 50px;
+  padding-bottom: 50px;
 }
 .business-container {
   display: flex;
@@ -273,7 +286,7 @@ button {
 
 /* #region section Support */
 .section-support {
-  margin: 0 50px;
+  padding: 50px 0;
 }
 .support-container {
   display: flex;
@@ -315,7 +328,7 @@ button {
 
 /* #region section Collaboration */
 .section-collaboration {
-  margin: 0 50px;
+  padding: 50px 0;
 }
 .collaboration-container {
   display: flex;
@@ -365,7 +378,7 @@ button {
 
 /* #region section Quick & Easy */
 .section-quickeasy {
-  margin: 100px 97px;
+  padding: 100px 97px;
 }
 .container-quickeasy {
   width: 916px;
@@ -425,7 +438,7 @@ button {
 
 /* #region section News feed */
 .section-newsfeed {
-  margin-bottom: 171px;
+  padding-bottom: 171px;
 }
 .section-newsfeed-container {
   width: 1110px;
@@ -470,31 +483,156 @@ button {
 /* #endregion section News feed */
 
 /* #region section Pricing */
-.section-pricing {
+.pricing {
+  padding-bottom: 100px;
 }
-.pricing-title {
+
+.price-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: #22343d;
 }
-.pricing-text {
+
+.price-title-descr {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #22343d;
 }
-.pricing-list {
+
+.price-list {
+  display: flex;
+  gap: 72px;
 }
-.pricing-list-item {
+
+.price-item {
+  border-radius: 8px;
+  width: 322px;
+  height: 456px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  width: calc((100% - 72px * 2) / 3);
+  padding: 32px 71px;
+  transition: transform 0.25s;
 }
-.pricing-list-subtitle {
+
+.price-item:nth-child(2) {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background: #02897a;
 }
-.pricing-list-text {
+
+.price-item-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #22343d;
+  /* line-height: 40px; */
+  line-height: 1.66667;
 }
-.pricing-list-subsubtitle {
+
+.price-item-title-descr {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #22343d;
+  /* line-height: 40px; */
+  line-height: 2.5;
+  color: #22343d;
 }
-.pricing-list-text-second {
+
+.price-number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 76px;
+  color: #02897a;
+  /* line-height: 100px; */
+  line-height: 1.31579;
+  letter-spacing: 0em;
+  text-align: center;
 }
-.pricing-list-text-third {
+
+.priscing-wrap {
+  display: flex;
 }
-.pricing-list-second {
+
+.price-valute {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #02897a;
+  /* line-height: 30px; */
+  line-height: 1.25;
+  letter-spacing: 0em;
 }
-.pricing-list-second-item {
+
+.price-period {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #22343d;
+  /* line-height: 19px; */
+  line-height: 1.1875;
+  letter-spacing: 0.01em;
+  color: #e0e0e0;
 }
-.pricing-list-second-btm {
+
+.price-list-points {
+}
+
+.price-points-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  /* line-height: 22px; */
+  line-height: 1.375;
+  letter-spacing: 0.01em;
+}
+
+.item-operations,
+.item-notifications,
+.item-landing {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  /* line-height: 22px; */
+  line-height: 1.375;
+  letter-spacing: 0.01em;
+  color: #22343d;
+}
+
+.standart {
+  color: #fff;
+}
+
+.price-btn {
+  border-radius: 8px;
+  width: 139px;
+  height: 44px;
+  background: #02897a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.standart-btn {
+  color: #02897a;
+  background: #fff;
+}
+
+.price-item:hover,
+.customer-item-box:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.customer-item-box:hover svg {
+  width: 18px;
+  height: 16px;
+}
+svg {
+  transition: transform 0.25s;
 }
 /* #endregion section Pricing */
 
